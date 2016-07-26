@@ -44,7 +44,8 @@ gulp.task('dev', ['tsc', 'inject'], () => {
     browserSync.init({
     server: {
         baseDir: './',
-        index: 'src/index.html'
+        index: 'src/index.html',
+        port: 3001
     }
 });
 
